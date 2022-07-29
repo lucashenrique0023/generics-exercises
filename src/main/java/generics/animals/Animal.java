@@ -12,6 +12,6 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return this.name;
+        return "My name is: " + this.name;
     }
 }
