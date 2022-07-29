@@ -14,9 +14,11 @@ public class GenericMethod {
     // When is needed to recieve a generic parameter, we must
     // declare Generic before return declaration and of course, on parameter.
     // Multiple parameters, just use comma
-    private static <T, V> void shout (T thingToShout, V otherThingToShout) {
+    private static <T, V> T shout (T thingToShout, V otherThingToShout) {
         System.out.println(thingToShout + "!!!!!");
         System.out.println(otherThingToShout + "!!!!!");
         System.out.println();
+
+        return thingToShout;
     }
 }
